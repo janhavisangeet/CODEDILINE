@@ -64,7 +64,7 @@ const Playground = () => {
       headers: {
         "content-type": "application/json",
         "Content-Type": "application/json",
-        "X-RapidAPI-Key": "7db81b5405msh764dabe7e6c6978p1c117fjsn38c9eeeb118c",
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPIDAPI_KEY,
         "X-RapidAPI-Host": "judge0-ce.p.rapidapi.com",
       },
       data: JSON.stringify({
@@ -85,7 +85,7 @@ const Playground = () => {
       url: "https://judge0-ce.p.rapidapi.com/submissions/" + token,
       params: { base64_encoded: "true", fields: "*" },
       headers: {
-        "X-RapidAPI-Key": "3ed7a75b44mshc9e28568fe0317bp17b5b2jsn6d89943165d8",
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPIDAPI_KEY_SECONDARY,
         "X-RapidAPI-Host": "judge0-ce.p.rapidapi.com",
       },
     };
