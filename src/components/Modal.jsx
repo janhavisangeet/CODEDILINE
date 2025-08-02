@@ -65,10 +65,10 @@ const Modal = () => {
   const { modalType } = isOpenModal;
   // ModalTypes
   // 1: New Folder
-  // 2: New Playground
-  // 3: New Playground and Folder
+  // 2: New Repository
+  // 3: New Repository and Folder
   // 4: Rename Folder
-  // 5: Rename Playground
+  // 5: Rename Repository
   return (
     <ModalContainer>
       <ModalContent>

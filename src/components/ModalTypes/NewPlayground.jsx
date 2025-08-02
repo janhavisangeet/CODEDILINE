@@ -38,9 +38,6 @@ const NewPlayground = () => {
   const { addPlayground } = useContext(PlaygroundContext);
 
   const languageOptions = [
-    { value: "cpp", label: "cpp" },
-    { value: "java", label: "java" },
-    { value: "javascript", label: "javascript" },
     { value: "python", label: "python" },
   ];
 
@@ -55,7 +52,7 @@ const NewPlayground = () => {
   return (
     <>
       <Header>
-        <h2>Create New Playground</h2>
+        <h2>Create New Repository</h2>
         <CloseButton onClick={() => closeModal()}>
           <IoCloseSharp />
         </CloseButton>
@@ -73,7 +70,7 @@ const NewPlayground = () => {
         <button onClick={() => {
           addPlayground(folderId, cardTitle, language.label)
           closeModal();
-        }}> Create Playground </button>
+        }}> Create Repository </button>
       </InputWithSelect>
     </>
   )

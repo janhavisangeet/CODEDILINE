@@ -7,9 +7,9 @@ const StyledLeftComponent = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    width: 40%;
+    width: 40%; 
     height: 100vh;
-    background-color: #1e1e1e;
+    background-color: #111111;
 
     display: flex;
     justify-content: center;
@@ -26,7 +26,6 @@ const ContentContainer = styled.div`
 
 const Logo = styled.img`
     width: 165px;
-    margin-bottom: 1rem;
 `
 
 const MainHeading = styled.h1`
@@ -73,7 +72,7 @@ const LeftComponent = () => {
         <StyledLeftComponent>
             <ContentContainer>
                 <Logo src={logo} alt="" />
-                <MainHeading> <span>Code</span> Deck</MainHeading>
+                {/* <MainHeading> <span>Codediline</span></MainHeading> */}
                 <SubHeading>Code. Compile. Debug.</SubHeading>
                 <AddNewButton onClick={() => openModal({
                     show: true,
@@ -82,7 +81,7 @@ const LeftComponent = () => {
                         folderId: "",
                         cardId: "",
                     }
-                })} ><span>+</span> Create New Playground</AddNewButton>
+                })} ><span>+</span> Create New Repository and Folder</AddNewButton>
             </ContentContainer>
         </StyledLeftComponent>
     )

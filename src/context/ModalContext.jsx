@@ -28,6 +28,7 @@ function ModalProvider({children}){
         openModal: openModal,
         closeModal: closeModal,
     }
+    
     return (
         <ModalContext.Provider value={ModalFeatures}>
             {children}

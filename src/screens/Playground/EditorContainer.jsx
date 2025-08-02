@@ -124,11 +124,7 @@ const EditorContainer = ({
   setCurrentCode,
   folderId,
   playgroundId,
-  saveCode,
-  runCode,
-  getFile,
   isFullScreen,
-  setIsFullScreen
 }) => {
 
   const { openModal } = useContext(ModalContext)
@@ -147,9 +143,6 @@ const EditorContainer = ({
   ]
 
   const languageOptions = [
-    { value: 'cpp', label: 'cpp' },
-    { value: 'javascript', label: 'javascript' },
-    { value: 'java', label: 'java' },
     { value: 'python', label: 'python' },
   ]
 
@@ -188,7 +181,7 @@ const EditorContainer = ({
               }
             })} />
           </Title>
-          <Button onClick={saveCode}>Save code</Button>
+          <Button >Save code</Button> 
         </Header>
         <SelectBars>
           <Select
@@ -213,18 +206,23 @@ const EditorContainer = ({
         />
       </CodeEditorContainer>
       <LowerToolBar>
-        <button onClick={() => setIsFullScreen((isFullScreen) => !isFullScreen)}>
+        <button onClick={() => {
+        }}>
           <BiFullscreen /> {isFullScreen ? 'Minimize Screen' : 'Full Screen'}
         </button>
 
+       
         <label htmlFor="codefile">
-          <input type="file" accept="." id="codefile" onChange={(e) => getFile(e, setCurrentCode)} /> <BiImport /> Import Code
+         
+          <BiImport /> Import Code
         </label>
 
-        <a href={`data:text/plain;charset=utf-8,${encodeURIComponent(currentCode)}`} download="code.txt">
+        
+        <a  >
           <BiExport /> Export Code
         </a>
-        <SaveAndRunButton onClick={runCode}>Run Code</SaveAndRunButton>
+        <SaveAndRunButton 
+        >Run Code</SaveAndRunButton>
       </LowerToolBar>
     </StyledEditorContainer >
   )

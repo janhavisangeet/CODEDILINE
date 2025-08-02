@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 import { useNavigate } from 'react-router-dom'
 const NavbarContainer = styled.div`
   height: ${({isFullScreen}) => isFullScreen ? '0' : '4.5rem'};
-  background: #1e1e1e;
+  background: #111111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +43,7 @@ const Navbar = ({ isFullScreen }) => {
       }}>
         <Logo src={logo} />
         <MainHeading>
-          <span>Code</span> Deck
+          <span>Codediline</span>
         </MainHeading>
       </NavbarContent>
     </NavbarContainer>

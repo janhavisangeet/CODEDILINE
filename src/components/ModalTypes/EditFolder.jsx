@@ -22,7 +22,6 @@ const EditFolder = () => {
       <Input>
         <input type="text" onChange={(e) => setFolderTitle(e.target.value)} />
         <button onClick={() => {
-          editFolderTitle(folderId, folderTitle)
           closeModal()
         }} >Update Title</button>
       </Input>

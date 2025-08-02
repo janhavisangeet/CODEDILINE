@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { IoTrashOutline } from 'react-icons/io5'
 import { BiEditAlt } from 'react-icons/bi'
 import { FcOpenedFolder } from 'react-icons/fc'
-import logo from '../../assets/logo-small.png'
+import logo from '../../assets/logo.png'
 import { ModalContext } from '../../context/ModalContext'
 import { PlaygroundContext } from '../../context/PlaygroundContext'
 import { useNavigate } from 'react-router-dom'
@@ -124,7 +124,7 @@ const RightComponent = () => {
     <StyledRightComponent>
       <Header>
         <Heading size="large">
-          My <span>Playground</span>
+          My <span>Repository</span>
         </Heading>
         <AddButton onClick={() => openModal({
           show: true,
@@ -160,7 +160,7 @@ const RightComponent = () => {
                     folderId: folderId,
                     cardId: "",
                   }
-                })}><span>+</span> New Playground</AddButton>
+                })}><span>+</span> New Repository</AddButton>
               </FolderIcons>
             </Header>
 
