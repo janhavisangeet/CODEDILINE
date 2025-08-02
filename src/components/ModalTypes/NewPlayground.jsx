@@ -38,6 +38,9 @@ const NewPlayground = () => {
   const { addPlayground } = useContext(PlaygroundContext);
 
   const languageOptions = [
+    { value: "cpp", label: "cpp" },
+    // { value: "java", label: "java" },
+    // { value: "javascript", label: "javascript" },
     { value: "python", label: "python" },
   ];
 

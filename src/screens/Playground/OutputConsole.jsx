@@ -8,12 +8,10 @@ const OutputConsole = ({ currentOutput }) => {
       <Header>
         Output:
 
-        {/* <a href={`data:text/plain;charset=utf-8,${encodeURIComponent(currentOutput)}`} download="output.txt">
-          <BiExport /> Export Output
-        </a> */}
-        <a >
+        <a href={`data:text/plain;charset=utf-8,${encodeURIComponent(currentOutput)}`} download="output.txt">
           <BiExport /> Export Output
         </a>
+        
 
       </Header>
       <TextArea

@@ -40,6 +40,9 @@ const NewPlaygroundAndFolder = () => {
   const { addPlaygroundAndFolder } = useContext(PlaygroundContext);
 
   const languageOptions = [
+    { value: "cpp", label: "cpp" },
+    // { value: "java", label: "java" },
+    // { value: "javascript", label: "javascript" },
     { value: "python", label: "python" },
   ];
 
@@ -73,6 +76,7 @@ const NewPlaygroundAndFolder = () => {
         />
 
         <button onClick={() => {
+          addPlaygroundAndFolder(folderName, playgroundName, language.label)
           closeModal();
         }}> Create Repository </button>
       </InputWithSelect>

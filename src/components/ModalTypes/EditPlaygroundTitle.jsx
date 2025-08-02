@@ -22,6 +22,7 @@ const EditPlaygroundTitle = () => {
       <Input>
         <input type="text" onChange={(e) => setPlaygroundTitle(e.target.value)} />
         <button onClick={() => {
+          editPlaygroundTitle(folderId, cardId, playgroundTitle)
           closeModal()
         }}>Update Title</button>
       </Input>

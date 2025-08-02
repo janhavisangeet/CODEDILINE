@@ -40,13 +40,17 @@ export const TextArea = styled.textarea`
   font-size: 1.1rem;
   min-height: 250px;
 `
-const InputConsole = ({ currentInput, setCurrentInput
+const InputConsole = ({ currentInput, setCurrentInput,
+  getFile
  }) => {
   return (
     <Console>
       <Header>
         Input: 
         <label htmlFor="inputfile">
+          <input type="file" accept="." id="inputfile" onChange={(e) =>{
+            getFile(e, setCurrentInput)
+            } } /> 
             <BiImport /> Import Input
         </label>
       </Header>
