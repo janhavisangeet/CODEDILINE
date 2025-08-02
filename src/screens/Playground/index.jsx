@@ -92,11 +92,11 @@ const Playground = () => {
 
     // call the api
     const res = await axios.request(options);
-    if (res.data.status_id == 2) {
+    if (res.data.status_id === 2) {
       const res2 = await getOutput(token);
       return res2;
     }
-    if (res.data.status_id == 3) {
+    if (res.data.status_id === 3) {
       return res.data;
     }
   };

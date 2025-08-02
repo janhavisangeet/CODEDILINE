@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { BiEditAlt, BiImport, BiExport, BiFullscreen } from "react-icons/bi";
 import { ModalContext } from "../../context/ModalContext";
 import Select from "react-select";
-import { languageMap } from "../../context/PlaygroundContext";
+//import { languageMap } from "../../context/PlaygroundContext";
 import model from "../../utils/gemini";
 import { Loading } from "../../components/ModalTypes";
 
@@ -122,14 +122,14 @@ const SaveAndRunButton = styled.button`
   cursor: pointer;
 `;
 
-const ConvertButton = styled.button`
-  padding: 0.6rem 1rem;
-  background: #0097d7;
-  border: none;
-  border-radius: 32px;
-  font-weight: 700;
-  cursor: pointer;
-`;
+// const ConvertButton = styled.button`
+//   padding: 0.6rem 1rem;
+//   background: #0097d7;
+//   border: none;
+//   border-radius: 32px;
+//   font-weight: 700;
+//   cursor: pointer;
+// `;
 
 const EditorContainer = ({
   title,
